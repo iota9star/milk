@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/v8dp"
+    android:layout_marginRight="@dimen/v8dp"
+    android:layout_marginTop="@dimen/v8dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v64dp">
+
+        <ImageButton
+            android:id="@+id/image_button_action"
+            android:layout_width="@dimen/v36dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_download_item_left_button"
+            android:textColor="@color/ThemeBlack"
+            android:textSize="@dimen/v12sp"
+            app:srcCompat="@drawable/ic_play_arrow_white_24dp"
+            tools:ignore="ContentDescription" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_view_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ThemeBlack"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_default_banner"
+                tools:ignore="ContentDescription" />
+
+            <com.john.waveview.WaveView
+                android:id="@+id/wave_view_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:above_wave_color="#9c000000"
+                app:blow_wave_color="#60000000"
+                app:progress="100"
+                app:wave_height="middle"
+                app:wave_hz="fast"
+                app:wave_length="little" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#64000000"
+                android:gravity="center"
+                android:paddingEnd="@dimen/v8dp"
+                android:paddingStart="@dimen/v8dp">
+
+                <TextView
+                    android:id="@+id/text_view_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/v10sp" />
+
+                <View
+                    android:layout_width="@dimen/v1dp"
+                    android:layout_height="@dimen/v16dp"
+                    android:layout_marginEnd="@dimen/v4dp"
+                    android:layout_marginStart="@dimen/v4dp"
+                    android:background="@color/colorNormalBackground" />
+
+                <TextView
+                    android:id="@+id/text_view_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/v12sp" />
+
+                <View
+                    android:layout_width="@dimen/v1dp"
+                    android:layout_height="@dimen/v16dp"
+                    android:layout_marginEnd="@dimen/v4dp"
+                    android:layout_marginStart="@dimen/v4dp"
+                    android:background="@color/colorNormalBackground" />
+
+                <TextView
+                    android:id="@+id/text_view_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/v12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:padding="@dimen/v4dp">
+
+                <TextView
+                    android:id="@+id/text_view_source"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorTransparent"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/image_button_more"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="@dimen/v24dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_download_item_right_button"
+            android:textSize="@dimen/v12sp"
+            app:srcCompat="@drawable/ic_more_vert_white_24dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

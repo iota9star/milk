@@ -1,0 +1,73 @@
+buildscript {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url = 'https://dl.bintray.com/yuancloud/maven/' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.6.0'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url = 'https://dl.bintray.com/yuancloud/maven/' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    setup = [
+            compileSdk: 26,
+            buildTools: "26.0.0",
+            minSdk    : 16,
+            targetSdk : 26,
+            resConfigs: "zh",
+            vcode     : 5,
+            vname     : "alpha-5"
+    ]
+    versions = [
+            libSupport           : "26.0.0-alpha1",
+            libButterKnife       : "8.6.0",
+            libRxJava            : "2.1.1",
+            libRxAndroid         : "2.0.1",
+            libOkhttp            : "3.8.1",
+            libOkIO              : "1.13.0",
+            libGlide             : "4.0.0-RC1",
+//            libGlideTransformations: "2.0.2",
+            libWaveView          : "v0.9",
+            libRefreshLayout     : "1.0.7",
+            libMaterialDrawer    : "5.9.4@aar",
+            libItemAnimators     : "2.2.7",
+            libFlowLayout        : "3.1.0",
+            libCircleImageView   : "2.1.0",
+            libFloatingToolbar   : "1.4.4",
+            libJunit             : "4.12",
+            libPhotoView         : "2.1.2",
+            libJsoup             : "1.10.3",
+            libAlipayZeroSdk     : "1.1",
+            libEventBus          : "3.0.0",
+            libBubbleSeekbar     : "3.5-lite",
+            libNumberPicker      : "1.2.1",
+            libPatternLockView   : "1.0.0",
+            libPatternLockViewRx2: "1.0.0",
+            libPinLockView       : "2.0.1",
+            libFingerprint       : "1.1.5",
+            libAutoFitTextView   : "4",
+            libKenBurnsView      : "1.0.7",
+            libOkGo              : "3.0.3",
+            libOkServer          : "2.0.3",
+            libOkRx2             : "2.0.2",
+            libGson              : "2.8.1"
+    ]
+}

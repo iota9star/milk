@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_juzi_with_banner"
+    android:minHeight="@dimen/v40dp"
+    android:minWidth="@dimen/v180dp"
+    android:previewImage="@mipmap/app_icon"
+    android:resizeMode="vertical|horizontal"
+    android:updatePeriodMillis="3600000" />

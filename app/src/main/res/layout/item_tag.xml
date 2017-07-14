@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_view_tag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_tag"
+    android:paddingBottom="@dimen/v2dp"
+    android:paddingLeft="@dimen/v8dp"
+    android:paddingRight="@dimen/v8dp"
+    android:paddingTop="@dimen/v2dp"
+    android:layout_margin="@dimen/v2dp"
+    android:textSize="@dimen/v12sp" />
+

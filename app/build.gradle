@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion rootProject.setup.compileSdk
+    buildToolsVersion rootProject.setup.buildTools
+    defaultConfig {
+        applicationId 'g.star.iota.milk'
+        minSdkVersion rootProject.setup.minSdk
+        targetSdkVersion rootProject.setup.targetSdk
+        versionCode rootProject.setup.vcode
+        versionName rootProject.setup.vname
+        resConfigs rootProject.setup.resConfigs
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //support lib
+    compile "com.android.support:appcompat-v7:$rootProject.versions.libSupport"
+    compile "com.android.support:design:$rootProject.versions.libSupport"
+    compile "com.android.support:recyclerview-v7:$rootProject.versions.libSupport"
+    compile "com.android.support:cardview-v7:$rootProject.versions.libSupport"
+    compile "com.android.support:palette-v7:$rootProject.versions.libSupport"
+    compile "com.android.support:support-v4:$rootProject.versions.libSupport"
+    compile "com.android.support:support-vector-drawable:$rootProject.versions.libSupport"
+
+    //OkHttp
+    compile "com.squareup.okhttp3:okhttp:$rootProject.versions.libOkhttp"
+
+    //okio
+    compile "com.squareup.okio:okio:$rootProject.versions.libOkIO"
+
+    //RxJava
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.versions.libRxJava"
+
+    //RxAndroid
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.versions.libRxAndroid"
+
+    //glide
+    compile "com.github.bumptech.glide:glide:$rootProject.versions.libGlide"
+    annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.versions.libGlide"
+//    compile "com.github.bumptech.glide:okhttp3-integration:$rootProject.versions.libGlide"
+
+    //glide-transformations
+//    compile "jp.wasabeef:glide-transformations:$rootProject.versions.libGlideTransformations"
+
+    //ButterKnife
+    compile "com.jakewharton:butterknife:$rootProject.versions.libButterKnife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.versions.libButterKnife"
+
+    //WaveView
+    compile "com.github.john990:WaveView:$rootProject.versions.libWaveView"
+
+    //tkrefresh layout
+    compile "com.lcodecorex:tkrefreshlayout:$rootProject.versions.libRefreshLayout"
+
+    //material drawer
+    compile("com.mikepenz:materialdrawer:$rootProject.versions.libMaterialDrawer") {
+        transitive = true
+    }
+
+    //item animators
+    compile "jp.wasabeef:recyclerview-animators:$rootProject.versions.libItemAnimators"
+
+    //flow layout
+    compile "cn.lankton:flowlayout:$rootProject.versions.libFlowLayout"
+
+    //circle image view
+    compile "de.hdodenhof:circleimageview:$rootProject.versions.libCircleImageView"
+
+    //junit
+    testCompile "junit:junit:$rootProject.versions.libJunit"
+
+    //floating toolbar
+    compile "com.github.rubensousa:floatingtoolbar:$rootProject.versions.libFloatingToolbar"
+
+    //photo view
+    compile "com.github.chrisbanes:PhotoView:$rootProject.versions.libPhotoView"
+
+    //jsoup
+    compile "org.jsoup:jsoup:$rootProject.versions.libJsoup"
+
+    //AlipayZeroSdk
+    compile "moe.feng:AlipayZeroSdk:$rootProject.versions.libAlipayZeroSdk"
+
+    //EventBus
+    compile "org.greenrobot:eventbus:$rootProject.versions.libEventBus"
+
+    //bubbleseekbar
+    compile "com.xw.repo:bubbleseekbar:$rootProject.versions.libBubbleSeekbar"
+
+    compile "com.andrognito.patternlockview:patternlockview:$rootProject.versions.libPatternLockView"
+    compile "com.andrognito.patternlockview:patternlockview-reactive:$rootProject.versions.libPatternLockViewRx2"
+
+    compile "com.andrognito.pinlockview:pinlockview:$rootProject.versions.libPinLockView"
+
+    compile "com.wei.android.lib:fingerprintidentify:$rootProject.versions.libFingerprint"
+
+    compile "biz.kasual:materialnumberpicker:$rootProject.versions.libNumberPicker"
+
+    compile "com.github.AndroidDeveloperLB:AutoFitTextView:$rootProject.versions.libAutoFitTextView"
+
+    compile "com.flaviofaria:kenburnsview:$rootProject.versions.libKenBurnsView"
+
+    //okgo
+    compile "com.lzy.net:okgo:$rootProject.versions.libOkGo"
+    compile "com.lzy.net:okserver:$rootProject.versions.libOkServer"
+    compile "com.lzy.net:okrx2:$rootProject.versions.libOkRx2"
+
+    //gson
+    compile "com.google.code.gson:gson:$rootProject.versions.libGson"
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+}

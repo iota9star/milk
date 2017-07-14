@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/ken_burns_view_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v256dp"
+        android:src="@drawable/bg_default_banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_hitokoto_bilibilijj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/v8dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/v8dp"
+            android:text="@string/please_wait"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_hitokoto_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="@dimen/v8dp"
+            android:layout_marginTop="@dimen/v8dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/v2dp"
+            android:paddingEnd="@dimen/v8dp"
+            android:paddingLeft="@dimen/v8dp"
+            android:paddingRight="@dimen/v8dp"
+            android:paddingStart="@dimen/v8dp"
+            android:paddingTop="@dimen/v2dp"
+            android:text="@string/wait"
+            android:textSize="@dimen/v12sp" />
+    </LinearLayout>
+</LinearLayout>

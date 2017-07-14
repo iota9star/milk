@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="false"
+    app:cardBackgroundColor="@color/colorNormalBackground"
+    app:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_view_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/image_view_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/v8dp"
+            android:layout_marginRight="@dimen/v8dp"
+            android:layout_marginTop="-4dp"
+            android:background="@color/colorTransparent"
+            android:src="@drawable/ic_bookmark_green_24dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/text_view_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/v4dp"
+            android:background="@drawable/bg_right_tag_circle"
+            android:paddingEnd="@dimen/v8dp"
+            android:paddingLeft="@dimen/v4dp"
+            android:paddingRight="@dimen/v8dp"
+            android:paddingStart="@dimen/v4dp"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/v10sp" />
+    </FrameLayout>
+</android.support.v7.widget.CardView>

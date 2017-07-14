@@ -1,0 +1,34 @@
+<resources>
+    <dimen name="v1dp">1dp</dimen>
+    <dimen name="v2dp">2dp</dimen>
+    <dimen name="v4dp">4dp</dimen>
+    <dimen name="v8dp">8dp</dimen>
+    <dimen name="v16dp">16dp</dimen>
+    <dimen name="v24dp">24dp</dimen>
+    <dimen name="v28dp">28dp</dimen>
+    <dimen name="v32dp">32dp</dimen>
+    <dimen name="v36dp">36dp</dimen>
+    <dimen name="v42dp">42dp</dimen>
+    <dimen name="v48dp">48dp</dimen>
+    <dimen name="v64dp">64dp</dimen>
+    <dimen name="v96dp">96dp</dimen>
+    <dimen name="v256dp">256dp</dimen>
+    <dimen name="v10sp">10sp</dimen>
+    <dimen name="v12sp">12sp</dimen>
+    <dimen name="v16sp">16sp</dimen>
+    <dimen name="v18sp">18sp</dimen>
+    <dimen name="v36sp">36sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="v196dp">196dp</dimen>
+    <dimen name="v28sp">28sp</dimen>
+    <dimen name="v180dp">180dp</dimen>
+    <dimen name="v40dp">40dp</dimen>
+    <dimen name="v128dp">128dp</dimen>
+    <dimen name="v56sp">56sp</dimen>
+    <dimen name="v48sp">48sp</dimen>
+    <dimen name="v32sp">32sp</dimen>
+    <dimen name="v24sp">24sp</dimen>
+    <dimen name="v18dp">18dp</dimen>
+    <dimen name="v72dp">72dp</dimen>
+    <dimen name="v56dp">56dp</dimen>
+</resources>

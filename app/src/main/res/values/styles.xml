@@ -1,0 +1,225 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ThemeRed" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeRed</item>
+        <item name="colorPrimaryDark">@color/ThemeRed</item>
+        <item name="colorAccent">@color/ThemeRed</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeRed</item>
+    </style>
+
+    <style name="ThemePink" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemePink</item>
+        <item name="colorPrimaryDark">@color/ThemePink</item>
+        <item name="colorAccent">@color/ThemePink</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemePink</item>
+    </style>
+
+    <style name="ThemePurple" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemePurple</item>
+        <item name="colorPrimaryDark">@color/ThemePurple</item>
+        <item name="colorAccent">@color/ThemePurple</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemePurple</item>
+    </style>
+
+    <style name="ThemeDeepPurple" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeDeepPurple</item>
+        <item name="colorPrimaryDark">@color/ThemeDeepPurple</item>
+        <item name="colorAccent">@color/ThemeDeepPurple</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeDeepPurple</item>
+    </style>
+
+    <style name="ThemeIndigo" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeIndigo</item>
+        <item name="colorPrimaryDark">@color/ThemeIndigo</item>
+        <item name="colorAccent">@color/ThemeIndigo</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeIndigo</item>
+    </style>
+
+    <style name="ThemeBlue" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeBlue</item>
+        <item name="colorPrimaryDark">@color/ThemeBlue</item>
+        <item name="colorAccent">@color/ThemeBlue</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeBlue</item>
+    </style>
+
+    <style name="ThemeLightBlue" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeLightBlue</item>
+        <item name="colorPrimaryDark">@color/ThemeLightBlue</item>
+        <item name="colorAccent">@color/ThemeLightBlue</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeLightBlue</item>
+    </style>
+
+    <style name="ThemeCyan" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeCyan</item>
+        <item name="colorPrimaryDark">@color/ThemeCyan</item>
+        <item name="colorAccent">@color/ThemeCyan</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeCyan</item>
+    </style>
+
+    <style name="ThemeTeal" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeTeal</item>
+        <item name="colorPrimaryDark">@color/ThemeTeal</item>
+        <item name="colorAccent">@color/ThemeTeal</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeTeal</item>
+    </style>
+
+    <style name="ThemeGreen" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeGreen</item>
+        <item name="colorPrimaryDark">@color/ThemeGreen</item>
+        <item name="colorAccent">@color/ThemeGreen</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeGreen</item>
+    </style>
+
+    <style name="ThemeLightGreen" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeLightGreen</item>
+        <item name="colorPrimaryDark">@color/ThemeLightGreen</item>
+        <item name="colorAccent">@color/ThemeLightGreen</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeLightGreen</item>
+    </style>
+
+    <style name="ThemeLime" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeLime</item>
+        <item name="colorPrimaryDark">@color/ThemeLime</item>
+        <item name="colorAccent">@color/ThemeLime</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeLime</item>
+    </style>
+
+    <style name="ThemeYellow" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeYellow</item>
+        <item name="colorPrimaryDark">@color/ThemeYellow</item>
+        <item name="colorAccent">@color/ThemeYellow</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeYellow</item>
+    </style>
+
+    <style name="ThemeAmber" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeAmber</item>
+        <item name="colorPrimaryDark">@color/ThemeAmber</item>
+        <item name="colorAccent">@color/ThemeAmber</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeAmber</item>
+    </style>
+
+    <style name="ThemeOrange" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeOrange</item>
+        <item name="colorPrimaryDark">@color/ThemeOrange</item>
+        <item name="colorAccent">@color/ThemeOrange</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeOrange</item>
+    </style>
+
+    <style name="ThemeDeepOrange" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeDeepOrange</item>
+        <item name="colorPrimaryDark">@color/ThemeDeepOrange</item>
+        <item name="colorAccent">@color/ThemeDeepOrange</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeDeepOrange</item>
+    </style>
+
+    <style name="ThemeBrown" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeBrown</item>
+        <item name="colorPrimaryDark">@color/ThemeBrown</item>
+        <item name="colorAccent">@color/ThemeBrown</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeBrown</item>
+    </style>
+
+    <style name="ThemeGrey" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeGrey</item>
+        <item name="colorPrimaryDark">@color/ThemeGrey</item>
+        <item name="colorAccent">@color/ThemeGrey</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeGrey</item>
+    </style>
+
+    <style name="ThemeBlueGrey" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeBlueGrey</item>
+        <item name="colorPrimaryDark">@color/ThemeBlueGrey</item>
+        <item name="colorAccent">@color/ThemeBlueGrey</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeBlueGrey</item>
+    </style>
+
+    <style name="ThemeBiliBili" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeBiliBili</item>
+        <item name="colorPrimaryDark">@color/ThemeBiliBili</item>
+        <item name="colorAccent">@color/ThemeBiliBili</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeBiliBili</item>
+    </style>
+
+    <style name="ThemeBlack" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/ThemeBlack</item>
+        <item name="colorPrimaryDark">@color/ThemeBlack</item>
+        <item name="colorAccent">@color/colorText</item>
+        <item name="android:textColor">@color/ThemeBlack</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackground</item>
+        <item name="board_background_color">@color/colorBoardBackground</item>
+        <item name="material_drawer_selected_text">@color/ThemeBlack</item>
+    </style>
+
+    <style name="ThemeDarkBlack" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorContentBoardBackgroundNight</item>
+        <item name="colorPrimaryDark">@color/colorContentBoardBackgroundNight</item>
+        <item name="colorAccent">@color/colorText</item>
+        <item name="android:textColor">@color/ThemeLime</item>
+        <item name="material_drawer_primary_text">@color/colorText</item>
+        <item name="material_drawer_secondary_text">@color/colorText</item>
+        <item name="material_drawer_divider">@color/colorText</item>
+        <item name="material_drawer_selected">@color/colorBoardBackgroundNight</item>
+        <item name="android:background">@color/colorContentBoardBackgroundNight</item>
+        <item name="content_board_background_color">@color/colorContentBoardBackgroundNight</item>
+        <item name="board_background_color">@color/colorBoardBackgroundNight</item>
+        <item name="material_drawer_selected_text">@color/ThemeDarkBlack</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ThemeLime.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="ThemeLime.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

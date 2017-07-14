@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTransparentBackground">#f0000000</color>
+
+    <color name="colorContentBoardBackground">#fffefe</color>
+    <color name="colorContentBoardBackgroundNight">#252525</color>
+    <color name="colorBoardBackground">#ececec</color>
+    <color name="colorBoardBackgroundNight">#3d3d3d</color>
+    <color name="colorText">#c4c4c4</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="colorNormalBackground">#dcdcdc</color>
+
+
+
+    <color name="ThemeRed">#f24336</color>
+    <color name="ThemePink">#e71e63</color>
+    <color name="ThemePurple">#9b27af</color>
+    <color name="ThemeDeepPurple">#663ab6</color>
+    <color name="ThemeIndigo">#3f51b4</color>
+    <color name="ThemeBlue">#2195f2</color>
+    <color name="ThemeLightBlue">#03a8f3</color>
+    <color name="ThemeCyan">#01bbd3</color>
+    <color name="ThemeTeal">#019587</color>
+    <color name="ThemeGreen">#4bad4f</color>
+    <color name="ThemeLightGreen">#8ac24a</color>
+    <color name="ThemeLime">#ccdb39</color>
+    <color name="ThemeYellow">#fdea3b</color>
+    <color name="ThemeAmber">#fdc007</color>
+    <color name="ThemeOrange">#fd9701</color>
+    <color name="ThemeDeepOrange">#fd5722</color>
+    <color name="ThemeBrown">#785548</color>
+    <color name="ThemeGrey">#9d9d9d</color>
+    <color name="ThemeBlueGrey">#607c8a</color>
+    <color name="ThemeBiliBili">#f97198</color>
+    <color name="ThemeBlack">#212121</color>
+    <color name="ThemeDarkBlack">#000000</color>
+</resources>

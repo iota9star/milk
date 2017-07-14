@@ -1,0 +1,47 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ThemeBlack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/v96dp"
+            android:layout_height="@dimen/v96dp"
+            android:src="@mipmap/app_icon" />
+
+        <TextView
+            android:layout_width="@dimen/v256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/v36dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/unlock"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/v36sp" />
+
+        <com.andrognito.pinlockview.IndicatorDots
+            android:id="@+id/indicator_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/v16dp"
+            android:layout_marginTop="@dimen/v36dp" />
+
+        <com.andrognito.pinlockview.PinLockView
+            android:id="@+id/pin_lock_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorType="fillWithAnimation"
+            app:keypadButtonSize="@dimen/v64dp"
+            app:keypadShowDeleteButton="true"
+            app:keypadTextColor="@color/colorText"
+            app:keypadTextSize="@dimen/v18sp"
+            app:pinLength="4" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparentBackground"
+    tools:ignore="Overdraw">
+
+    <FrameLayout
+        android:id="@+id/frame_layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent">
+
+        <com.john.waveview.WaveView
+            android:id="@+id/wave_view_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparent"
+            app:above_wave_color="?@android:attr/colorAccent"
+            app:blow_wave_color="?@android:attr/colorAccent"
+            app:progress="100"
+            app:wave_height="middle"
+            app:wave_hz="fast"
+            app:wave_length="middle" />
+
+        <TextView
+            android:id="@+id/text_view_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorTransparent"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/v36sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparent"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/v36dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <ImageView
+            android:id="@+id/image_view_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v36dp"
+            android:background="@color/colorTransparent"
+            app:srcCompat="@drawable/ic_keyboard_arrow_up_white_18dp"
+            tools:ignore="ContentDescription" />
+
+        <ScrollView
+            android:id="@+id/scroll_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransparent">
+
+            <TextView
+                android:id="@+id/text_view_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:background="#60ffffff"
+                android:clickable="true"
+                android:linksClickable="true"
+                android:padding="@dimen/v16dp"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_download"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/v36dp"
+            android:layout_margin="@dimen/v16dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/download" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

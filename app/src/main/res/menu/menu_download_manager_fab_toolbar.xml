@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_start_all"
+        android:icon="@drawable/ic_play_arrow_white_24dp"
+        android:description="@string/start_all"
+        app:showAsAction="ifRoom"
+        android:title="@string/start_all" />
+
+    <item
+        android:id="@+id/action_pause_all"
+        android:icon="@drawable/ic_pause_white_24dp"
+        android:description="@string/pause_all"
+        app:showAsAction="ifRoom"
+        android:title="@string/pause_all" />
+
+    <item
+        android:id="@+id/action_clear_all"
+        android:icon="@drawable/ic_clear_all_white_24dp"
+        android:description="@string/clear_record"
+        app:showAsAction="ifRoom"
+        android:title="@string/clear_record" />
+
+    <item
+        android:id="@+id/action_delete_all"
+        android:icon="@drawable/ic_delete_forever_white_24dp"
+        android:description="@string/delete_all"
+        app:showAsAction="ifRoom"
+        android:title="@string/delete_all" />
+</menu>

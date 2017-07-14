@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_touch_to_top"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:description="@string/action_touch_to_top"
+        app:showAsAction="always"
+        android:title="@string/action_touch_to_top" />
+    <item
+        android:id="@+id/action_change_span_count"
+        android:icon="@drawable/ic_change_history_white_24dp"
+        android:description="@string/action_change_span_count"
+        app:showAsAction="always"
+        android:title="@string/action_change_span_count" />
+    <item
+        android:id="@+id/action_download_manager"
+        android:icon="@drawable/ic_download_manager_24dp"
+        android:description="@string/action_download_manager"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_download_manager" />
+</menu>

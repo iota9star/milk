@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.theme.ThemeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:id="@+id/ken_burns_view_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/v256dp"
+                android:src="@drawable/bg_default_banner"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.6"
+                tools:ignore="ContentDescription" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/v8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/v4dp"
+                android:paddingLeft="@dimen/v4dp"
+                android:paddingRight="@dimen/v4dp"
+                android:paddingStart="@dimen/v4dp"
+                android:text="@string/setting_banner"
+                android:textSize="@dimen/v12sp" />
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/edit_text_url"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/url_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="textUri"
+                    android:maxLines="1"
+                    android:textSize="@dimen/v12sp" />
+
+                <Button
+                    android:id="@+id/button_set"
+                    android:layout_width="@dimen/v42dp"
+                    android:layout_height="@dimen/v24dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_button"
+                    android:gravity="center"
+                    android:text="@string/settings"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/v12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/board_background_color"
+    tools:ignore="Overdraw">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/v48dp"
+        android:background="?@android:attr/colorAccent" />
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/twinkling_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/v16dp"
+        android:layout_marginLeft="@dimen/v16dp"
+        android:layout_marginRight="@dimen/v16dp"
+        android:layout_marginStart="@dimen/v16dp"
+        android:background="?attr/content_board_background_color">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+</RelativeLayout>
